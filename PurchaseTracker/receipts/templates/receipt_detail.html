@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title text-center">Receipt Detail</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-text">
+                    <h3>Store Name:</h3> {{ receipt.store_name }}
+                </div>
+                <div class="card-text">
+                    <h3>Date of Purchase:</h3> {{ receipt.date_of_purchase }}
+                </div>
+                <div class="card-text">
+                    <h3>Total Amount:</h3> {{ receipt.total_amount }}
+                </div>
+                <div class="card-text">
+                    <h3>Item List:</h3>
+                </div>
+                <div class="card-text">{{ receipt.item_list }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

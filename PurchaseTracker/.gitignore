@@ -1,0 +1,22 @@
+# .gitignore
+
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Database
+db.sqlite3
+
+# Static files
+/staticfiles/
+
+# Media files
+/media/
+
+.env

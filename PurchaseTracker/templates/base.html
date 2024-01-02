@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+</head>
+
+
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid" style="padding: 20px;">
+        <div class="navbar-header">
+            <a class="navbar-brand " style="margin-right: 350px;" href="/"><span style="color:white ; font-weight:bolder ; font-size:18px" class="logo">Purchase Tracker</span></a>
+        </div>
+        <ul class="nav navbar-nav ">
+            <li ><a href="/" style="color:white ; font-size:18px">Home</a></li>
+            <li ><a href="/receipts/receipts" style="color:white; font-size:18px">Receipts</a></li>
+            <li ><a href="/receipts/receipts/new" style="color:white ; font-size:18px">Add</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            {% if user.is_authenticated %}
+            <!-- Show these links if the user is authenticated -->
+            <li ><a href="/accounts/logout" style="color:white ; font-size:18px"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            <li ><a href="#" style="color:white ; font-size:18px"><span class="glyphicon glyphicon-user"></span> {{ user.username }}</a></li>
+            {% else %}
+            <!-- Show these links if the user is not authenticated -->
+            <li ><a href="/accounts/register" style="color:white ; font-size:18px"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+            <li ><a href="/accounts/login" style="color:white ; font-size:18px"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+ 
+
+</body>
+
+</html>

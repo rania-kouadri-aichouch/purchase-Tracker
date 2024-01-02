@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Confirm Deletion</h2>
+<p>Are you sure you want to delete the receipt "{{ receipt.store_name }} - {{ receipt.date_of_purchase }}"?</p>
+<form method="post" action="{% url 'receipt-delete' pk=receipt.pk %}">
+    {% csrf_token %}
+    <button type="submit">Yes, delete</button>
+</form>
+<a href="{% url 'receipt-list' %}">Cancel</a>
+{% endblock %}

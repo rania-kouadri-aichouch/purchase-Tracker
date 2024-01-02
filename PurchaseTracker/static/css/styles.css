@@ -1,0 +1,167 @@
+body {
+    background: linear-gradient(to right, #A084CA, #BFACE0, #EBC7E8);
+}
+
+
+
+/* details styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 5% 30%;
+    padding-top: 2%;
+    border-radius: 5%;
+    box-shadow: 0 10px 8px rgba(15, 15, 15, 0.3);
+    
+}
+
+.card-body {
+    padding: 4% 5%;
+}
+
+.card-text {
+    font-size: 18px;
+    color: white;
+}
+.card-text h3{
+    color: #6c757d;
+}
+
+/* list styles */
+
+.receipts{
+
+    margin: 5% 10%;
+}
+.table{
+
+    margin-top: 5%;
+}
+
+h2{
+    color: white;
+}
+
+
+/* form styles */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-container{
+
+    margin: 5% 30%;
+}
+
+
+
+button {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.login-container {
+
+    margin: 5% 30%;
+}
+
+.register-container {
+
+    margin: 5% 30%;
+}
+
+/* navbar */
+
+.navbar {
+          
+            background: none;
+            border: none;
+        }
+    
+.nav-item {
+            color: white;
+        }
+    
+.navbar-brand {
+            color: white;
+        }
+
+
+        /* landing */
+
+.landing {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+            margin-top:13%;
+            
+         }
+
+
+.error-message{
+
+    color: red;
+    margin: 2% 0%;
+}         
+
+.register {
+
+    background-color: #713cc0;
+    border: none;
+    color: #fff;
+    padding: 2% 6%;
+    margin: 4% 4%;
+}
+
+.login{
+
+    background-color: #713cc0;
+        border: none;
+        color: #fff;
+        padding: 2% 6%;
+        margin: 4% 4%;
+
+}
+
+
+/* pagination */
+.pagination a {
+
+    font-size: 18px;
+}
